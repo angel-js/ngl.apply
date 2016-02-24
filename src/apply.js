@@ -1,9 +1,9 @@
-angular.module('ngApply', [])
+angular.module('ngl.apply', [])
 
-.factory('ngApply', function () {
+.factory('nglApply', function () {
     'use strict';
 
-    var ngApply = function (scope, transaction) {
+    var nglApply = function (scope, transaction) {
         return function () {
             var args = [].slice.call(arguments);
 
@@ -13,5 +13,5 @@ angular.module('ngApply', [])
         };
     };
 
-    return ngApply;
+    return nglApply;
 });

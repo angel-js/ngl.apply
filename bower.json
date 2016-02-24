@@ -1,0 +1,9 @@
+{
+  "name": "ngl.apply",
+  "version": "0.2.0",
+  "license": "MIT",
+  "main": "./src/apply.js",
+  "dependencies": {
+    "angular": "1.*"
+  }
+}

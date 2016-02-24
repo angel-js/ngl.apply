@@ -1,5 +1,5 @@
-ng-apply
-========
+ngl.apply
+=========
 
 Wrapper to `$scope.$apply`
 
@@ -42,14 +42,14 @@ angular.module('app', [])
 });
 ```
 
-`ng-apply` is a higher order function which gets the same _"transaction"_
+`ngl.apply` is a higher order function which gets the same _"transaction"_
 argument and returns a function that invokes `$scope.$apply` when called
 
 ```js
-angular.module('app', ['ng-apply'])
-.directive('counter', function (ngApply) {
+angular.module('app', ['ngl.apply'])
+.directive('counter', function (nglApply) {
   return function link (scope, element, attrs) {
-    element.on('click', ngApply(scope, function () {
+    element.on('click', nglApply(scope, function () {
       if (!scope.counter) { scope.counter = 0; }
       scope.counter += 1;
     }));
